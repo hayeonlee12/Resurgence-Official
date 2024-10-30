@@ -8,6 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        publicPath: '/', // ensures all resources are served from the root
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -53,5 +54,19 @@ module.exports = {
                 },
             },
         ],
+    },
+    devServer: {
+        historyApiFallback: {
+            rewrites: [
+                { from: /^\/About.html/, to: '/About.html' },
+                { from: /^\/Blog.html/, to: '/Blog.html' },
+                { from: /^\/Post1.html/, to: '/Post1.html' },
+                { from: /^\/Post2.html/, to: '/Post2.html' },
+            ],
+        },
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
+        port: 8080,
     },
 };
