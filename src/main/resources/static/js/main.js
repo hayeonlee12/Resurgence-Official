@@ -1,3 +1,5 @@
+
+
 // Selecting elements
 const addPostBtn = document.getElementById("addPostBtn");
 const postFormContainer = document.getElementById("postFormContainer");
