@@ -32,7 +32,10 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: './src/main/resources/static/css/style.css', to: 'resources/css' },
-                { from: './src/main/resources/static/img', to: 'resources/img' },
+                { from: './src/main/resources/static/img/leaf.png', to: 'resources/img' },
+                { from: './src/main/resources/static/img/home.png', to: 'resources/img' },
+                { from: './src/main/resources/static/img/home2.png', to: 'resources/img' },
+                { from: './src/main/resources/static/img/Post1.jpg', to: 'resources/img' },
             ],
         }),
     ],
