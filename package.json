@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "homepage": "hayeonlee12.github.io/Resurgence-Official/",
+    "version": "^0.1.2",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
