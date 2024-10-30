@@ -15,4 +15,14 @@ public class PageController {
     public String blogPage() {
         return "Blog"; // Looks for src/main/resources/templates/About.html if using Thymeleaf
     }
+
+    @GetMapping("/resurgence/Blog/1")
+    public String firstPage() {
+        return "Post1"; // Looks for src/main/resources/templates/About.html if using Thymeleaf
+    }
+
+    @GetMapping("/resurgence/Blog/2")
+    public String secondPage() {
+        return "Post2"; // Looks for src/main/resources/templates/About.html if using Thymeleaf
+    }
 }
