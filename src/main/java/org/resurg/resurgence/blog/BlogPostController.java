@@ -39,4 +39,5 @@ public class BlogPostController {
     public void deletePost(@PathVariable Long id) {
         blogPostService.deletePost(id);
     }
+
 }

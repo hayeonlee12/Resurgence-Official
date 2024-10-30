@@ -17,4 +17,5 @@ public class BlogPost {
     private String content;
     private String author;
     private LocalDateTime timestamp;
+    private String media;
 }
