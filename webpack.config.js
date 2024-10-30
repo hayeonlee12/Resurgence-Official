@@ -14,12 +14,20 @@ module.exports = {
             template: './src/main/resources/templates/index.html',
         }),
         new HtmlWebpackPlugin({
-            filename: 'about.html',
-            template: './src/main/resources/templates/about.html',
+            filename: 'About.html',
+            template: './src/main/resources/templates/About.html',
         }),
         new HtmlWebpackPlugin({
-            filename: 'blog.html',
-            template: './src/main/resources/templates/blog.html',
+            filename: 'Blog.html',
+            template: './src/main/resources/templates/Blog.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Post1.html',
+            template: './src/main/resources/templates/Post1.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'Post2.html',
+            template: './src/main/resources/templates/Post2.html',
         }),
         new CopyWebpackPlugin({
             patterns: [
