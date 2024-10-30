@@ -6,6 +6,7 @@
     "copy-webpack-plugin": "^12.0.2",
     "gh-pages": "^6.2.0",
     "homepage": "hayeonlee12.github.io/Resurgence-Official/",
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "version": "^0.1.2",
     "webpack": "^5.95.0",
@@ -15,5 +16,9 @@
     "build": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "mini-css-extract-plugin": "^2.9.1"
   }
 }
